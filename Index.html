@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        button {
+            background-color: #24292e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #444c56;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola GitHub</h1>
+    <button onclick="simularLogin()">Iniciar sesión</button>
+
+    <p id="mensaje"></p>
+
+    <script>
+        function simularLogin() {
+            const mensaje = document.getElementById("mensaje");
+            mensaje.textContent = "Simulando inicio de sesión...";
+            setTimeout(() => {
+                mensaje.textContent = "¡Has iniciado sesión con éxito!";
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
